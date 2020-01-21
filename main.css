@@ -1,0 +1,17 @@
+/* input[type="text"]:disabled {
+  background: #ccc;
+} */
+
+input:default + label {
+    font-style: italic;
+  }
+  input:checked + label { 
+    color: red; 
+    font-weight: bold;
+  }
+  input:indeterminate + label { 
+    background-color: palegoldenrod; 
+  }
+  progress:indeterminate {
+    outline: 2px green dashed;
+  }
