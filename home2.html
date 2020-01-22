@@ -114,6 +114,10 @@
   };
 
   let person1 = new Person('Tammi', 'Smith', 32, 'female', ['music', 'skiing', 'kickboxing', 'swimming', 'soccer']);
+
+  Person.prototype.farewell = function() {
+    alert(this.name.first + ' has left the building. Bye for now!');
+  };
 </script>
 
 </html>
