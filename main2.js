@@ -260,15 +260,23 @@ class Person {
       super(first, last, age, gender, interests);
 
       // subject and grade are specific to Teacher
-      this.subject = subject;
+    //   this.subject = subject;
+      // use getter and setter
+      this._subject = subject;
       this.grade = grade;
+    }
+    get subject() {
+        return this._subject;
+    }
+    set subject(newSubject) {
+        this._subject = newSubject;
     }
   }
 
   // Instantiate Teacher
 
   let snape = new Teacher('Severus', 'Snape', 58, 'male', ['Potions'], 'Dark arts', 5);
-  snape.greeting(); // Hi! I'm Severus.
-  snape.farewell(); // Severus has left the building. Bye for now.
-  console.log(snape.age) // 58
-  console.log(snape.subject) // Dark arts
+//   snape.greeting(); // Hi! I'm Severus.
+//   snape.farewell(); // Severus has left the building. Bye for now.
+//   console.log(snape.age) // 58
+//   console.log(snape.subject) // Dark arts
