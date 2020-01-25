@@ -33,6 +33,17 @@
       populateHeader(superHeroes);
       showHeroes(superHeroes);
     }
+    // same as above
+    // request.open('GET', requestURL);
+    // request.responseType = 'text'; // now we're getting a string!
+    // request.send();
+
+    // request.onload = function () {
+    //   const superHeroesText = request.response; // get the string from the response
+    //   const superHeroes = JSON.parse(superHeroesText); // convert it to an object
+    //   populateHeader(superHeroes);
+    //   showHeroes(superHeroes);
+    // }
 
     function populateHeader(jsonObj) {
       const myH1 = document.createElement('h1');
