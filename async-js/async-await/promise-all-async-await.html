@@ -25,9 +25,9 @@
 
       async function displayContent() {
         // Call the fetchAndDecode() method to fetch the images and the text, and store their promises in variables
-        let coffee = fetchAndDecode('coffee.jpg', 'blob');
-        let tea = fetchAndDecode('tea.jpg', 'blob');
-        let description = fetchAndDecode('description.txt', 'text');
+        let coffee = fetchAndDecode('dh.jpg', 'blob');
+        let tea = fetchAndDecode('mnt.jpg', 'blob');
+        let description = fetchAndDecode('notif.txt', 'text');
 
         // Use Promise.all() to run code only when all three function calls have resolved
         let values = await Promise.all([coffee, tea, description]);
